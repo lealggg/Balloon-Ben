@@ -1,0 +1,138 @@
+.personajes{
+  /*background: linear-gradient(to bottom, #e2f6f5, #b8ece8);*/
+  font-family: 'Janda Manatee', sans-serif;
+  color: #333;
+}
+
+.personajes-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.personajes-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  letter-spacing: 2px;
+}
+
+.personajes-descripciones {
+  text-align: center;
+  position: relative;
+}
+
+.personajes-descripcion {
+  font-family: 'Quicksand', sans-serif;  
+  font-size: 2rem;
+  font-weight: normal;
+  color: #005E62;
+  margin-bottom: 100px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 100px;
+}
+
+.per-personajes {
+  text-align: left;
+  position: relative;
+}
+
+.per-personaje {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  height: 10px;
+  letter-spacing: 2px;
+}
+
+.personajes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.personaje-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.personaje-img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.personaje-img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+  /* Título principal */
+  .personajes-title {
+    font-size: 2rem;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  /* Descripción */
+  .personajes-descripcion {
+    font-size: 1.2rem;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* "Personajes" subtítulo */
+  .per-personaje {
+    font-size: 1.5rem;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center; /* Centramos todo en móvil */
+  }
+
+  .per-personajes {
+    text-align: center;
+  }
+
+  /* Grid de personajes */
+  .personajes-grid {
+    grid-template-columns: 1fr;  /* 1 columna */
+    gap: 20px;
+    width: 90%;
+    padding: 20px 0;
+  }
+
+  /* Cada tarjeta de personaje */
+  .personaje-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Imagen del personaje */
+  .personaje-img {
+    width: 100%;      /* 100% del contenedor */
+    height: auto;
+  }
+}

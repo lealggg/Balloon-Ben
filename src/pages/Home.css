@@ -1,0 +1,282 @@
+.home {
+  /*background: linear-gradient(to bottom, #e2f6f5, #b8ece8);*/
+  font-family: 'Janda Manatee', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.home-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.home-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.home-descripciones {
+  text-align: left;
+  position: relative;
+}
+
+.home-descripcion {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 1;
+}
+
+.home-eventos {
+  text-align: left;
+  position: relative;
+}
+
+.home-evento {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  height: 10px;
+  letter-spacing: 2px;
+}
+
+.home-subEventos {
+  text-align: left;
+  position: relative;
+}
+
+.home-subEvento {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0px;
+  height: 40px;
+}
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;      /* centra verticalmente si hay altura */
+  width: 100%;              /* ocupa todo el ancho disponible */
+  padding: 20px;
+}
+
+.btn-outline {
+  background-color: #27C2B7; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-outline:hover {
+  background-color: #20a29a;
+  transform: scale(1.05);
+}
+
+.home-actividades {
+  text-align: left;
+  position: relative;
+}
+
+.home-actividad {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  height: 10px;
+  letter-spacing: 2px;
+}
+
+.home-subActividades {
+  text-align: left;
+  position: relative;
+}
+
+.home-subActividad {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0px;
+  height: 40px;
+}
+
+.home-videos {
+  text-align: left;
+  position: relative;
+}
+
+.home-video {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  height: 10px;
+  letter-spacing: 2px;
+}
+
+.home-subVideos {
+  text-align: left;
+  position: relative;
+}
+
+.home-subVideo {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0px;
+  height: 40px;
+}
+
+
+
+.home-personajes {
+  text-align: left;
+  position: relative;
+}
+
+.home-personaje {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  height: 10px;
+  letter-spacing: 2px;
+}
+
+.home-subPersonajes {
+  text-align: left;
+  position: relative;
+}
+
+.home-subPersonaje {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #46B4B9;
+  margin-bottom: 100px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+
+  /* ---------- TÍTULO PRINCIPAL ---------- */
+  .home-title {
+    font-size: 3rem;      /* tú pediste 3rem */
+    width: 90%;
+    padding: 30px 10px;
+  }
+
+  /* ---------- DESCRIPCIÓN ---------- */
+  .home-descripcion {
+    font-size: 1.4rem;
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  /* ---------- SUBTÍTULOS (Eventos, Actividades, Videos, Personajes) ---------- */
+  .home-evento,
+  .home-actividad,
+  .home-video,
+  .home-personaje {
+    font-size: 1.8rem;
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+
+  .home-subEvento,
+  .home-subActividad,
+  .home-subVideo,
+  .home-subPersonaje {
+    font-size: 1.3rem;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  /* ---------- REJILLAS (2 columnas en móvil) ---------- */
+  .event-row,
+  .activ-row,
+  .vide-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* tú pediste 2 columnas */
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  /* ---------- TARJETAS ---------- */
+  .event-row img,
+  .activ-row img,
+  .vide-row img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---------- PADDING GENERAL REDUCIDO ---------- */
+  .home-descripcion,
+  .home-subEvento,
+  .home-subActividad,
+  .home-subVideo,
+  .home-subPersonaje {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* ---------- BOTONES (mantener tamaño original) ---------- */
+  .btn-container {
+    padding: 10px 0;
+  }
+
+  .btn-outline {
+    width: auto;
+    font-size: 18px;  /* se mantiene igual */
+    padding: 12px 36px; /* igual */
+  }
+}

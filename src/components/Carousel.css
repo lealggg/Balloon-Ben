@@ -1,0 +1,141 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-wrapper {
+  min-width: 100%;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slide-wrapper.active {
+  opacity: 1;
+}
+
+.slide {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* 🔥 Hace que la imagen llene el contenedor sin distorsionarse */
+  display: block;
+  border-radius: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #333;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.4rem 0.4rem;
+  border-radius: 20%;
+  z-index: 10;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+/* 🔘 Botones “Conoce más” */
+.slide-button {
+  position: absolute;
+  bottom: 90px;
+  right: 0px;
+  padding: 12px 52px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.slide-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.slide-button.yellow {
+  background-color: #f9c933;
+}
+
+.slide-button.orange {
+  background-color: #f77e21;
+}
+
+.slide-button.blue {
+  background-color: #2196f3;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    height: 320px;
+  }
+
+  .arrow {
+    font-size: 2.2rem;
+    padding: 0.3rem 0.3rem;
+    top: 50%;
+  }
+
+  .slide-button {
+    padding: 10px 32px;
+    font-size: 15px;
+    bottom: 55px;
+  }
+
+  .dot {
+    height: 9px;
+    width: 9px;
+    margin: 0 5px;
+  }
+}

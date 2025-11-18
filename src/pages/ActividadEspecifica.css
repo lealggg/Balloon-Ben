@@ -1,0 +1,207 @@
+.actividadespecifica {
+  position: relative;
+  font-family: 'Janda Manatee', sans-serif;
+  color: #333;
+  overflow: hidden; /* evita que la imagen sobresalga */
+}
+
+.actividadespecifica-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 3rem 6rem;
+  box-sizing: border-box;
+}
+
+.actividadespecifica-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  z-index: 2;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.img-actividadespecifica {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 70%; /* ajusta el tamaño */
+  max-width: 800px;
+  border-radius: 35px; /* opcional */
+}
+
+.actividadespecifica-descripciones {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.actividadespecifica-descripcion {
+  font-family: 'Quicksand', sans-serif;  
+  font-size: 2rem;
+  font-weight: normal;
+  color: #005E62;
+  margin-bottom: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.actividadespecifica-necesidad {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+  z-index: 2;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+/* 🔹 CONTENEDOR FLEX PARA TEXTO + IMAGEN */
+.actividadespecifica-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 8%;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* Sección de texto a la izquierda */
+.actividadespecifica-explicaciones {
+  flex: 1;
+  text-align: left;
+}
+
+/* Texto explicativo */
+.actividadespecifica-explicacion {
+  font-family: 'Quicksand', sans-serif;  
+  font-weight: normal;
+  font-size: 2rem;
+  color: #005E62;
+  margin-bottom: 40px;
+  width: 90%;
+  line-height: 1.5;
+}
+
+/* Lista numerada */
+.actividad-lista {
+  font-family: 'Quicksand', sans-serif;   
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actividad-lista li {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+  color: #005E62;
+}
+
+.actividad-lista li span {
+  background-color: #7D5BA6;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Imagen a la derecha */
+.actividad-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  
+}
+
+.actividad-imagen img {
+  width: 22%;
+  border-radius: 40px;
+  position: absolute;
+  top: 1200px;
+  right: 180px;
+}
+
+@media (max-width: 768px) {
+  
+  /* Imagen superior */
+  .img-actividadespecifica {
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  /* Contenedor general */
+  .actividadespecifica-wrapper {
+    padding: 2rem;
+  }
+
+  /* Títulos */
+  .actividadespecifica-title {
+    font-size: 3rem;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .actividadespecifica-necesidad {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Descripción */
+  .actividadespecifica-descripcion {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Contenedor de texto + imagen → Se vuelve 1 columna */
+  .actividadespecifica-contenido {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 50px;
+  }
+
+  /* Explicaciones */
+  .actividadespecifica-explicacion {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Lista */
+  .actividad-lista li {
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+
+  /* Imagen lateral → SE CORRIGE Y DEJA DE SER ABSOLUTE */
+  .actividad-imagen img {
+    width: 80%;
+    position: static;
+    margin: 0 auto 40px auto;
+    display: block;
+  }
+}

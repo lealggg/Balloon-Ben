@@ -1,0 +1,61 @@
+.event-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+/* contenedor para cada imagen */
+.event-card {
+  position: relative;
+  display: inline-block;
+}
+
+.event-card img {
+  width: 275px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* botón sobre la imagen */
+.event-btn {
+  position: absolute;
+  bottom: 120px;         /* ajusta verticalmente */
+  right: 5px;          /* ajusta horizontalmente */
+  background-color: #003b63;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+  transform: scale(1.05);
+  background-color: #025088;
+}
+
+@media (max-width: 768px) {
+
+  .event-row {
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .event-card img {
+    width: 200px;
+  }
+
+  .event-btn {
+    bottom: 70px;
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}

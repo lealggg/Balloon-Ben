@@ -1,0 +1,82 @@
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Janda Manatee', sans-serif;
+  background-color: #e6fafa;
+}
+
+/* Contenedor del header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 100px;
+}
+
+/* Logo */
+.logo img {
+  height: 125px; /* Ajusta según tu imagen */
+}
+
+/* Contenedor del nav */
+.nav {
+  background-color: #fff;
+  padding: 24px 60px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 0px #3fb5b5; /* sombra estilo imagen */
+}
+
+/* Lista del menú */
+.barnav {
+  font-family: 'Janda Manatee', sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 70px;
+  margin: 0;
+  padding: 0 ;
+  letter-spacing: 2px;
+}
+
+/* Links */
+.barnav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3fb5b5;
+  transition: color 0.3s ease;
+}
+
+.barnav a:hover {
+  color: #297777; /* efecto hover */
+}
+
+.nav .barnav li a.active {
+  color: #f4c542; /* color resaltado */
+  border-bottom: 2px solid #f4c542;
+  padding-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo img {
+    height: 90px;
+  }
+
+  .nav {
+    padding: 18px 30px;
+    border-radius: 16px;
+  }
+
+  .barnav {
+    gap: 30px;
+  }
+
+  .barnav a {
+    font-size: 18px;
+  }
+}

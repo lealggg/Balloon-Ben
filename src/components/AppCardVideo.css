@@ -1,0 +1,64 @@
+.vide-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+/* contenedor para cada imagen */
+.vide-card {
+  position: relative;
+  display: inline-block;
+}
+
+.vide-card img {
+  width: 275px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* botón sobre la imagen */
+.vide-btn {
+  position: absolute;
+  bottom: 30px;         /* ajusta verticalmente */
+  right: 5px;          /* ajusta horizontalmente */
+  background-color: #FBD217;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 40px;
+  text-align: center;
+}
+
+.vide-btn:hover {
+  transform: scale(1.05);
+  background-color: #d8b412;
+}
+
+@media (max-width: 768px) {
+  .vide-row {
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .vide-card img {
+    width: 200px;
+  }
+
+  .vide-btn {
+    padding: 5px 14px;
+    font-size: 13px;
+    bottom: 20px;
+    right: 5px;
+    height: 36px;
+  }
+}

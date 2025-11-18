@@ -1,0 +1,222 @@
+.evento1 {
+  position: relative;
+  font-family: 'Janda Manatee', sans-serif;
+  color: #333;
+  overflow: hidden; /* evita que la imagen sobresalga */
+}
+
+.evento1-wrapper {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 3rem 6rem;
+  box-sizing: border-box;
+}
+
+.evento1-title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #46B4B9;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  z-index: 2;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.img-evento1 {
+  display: block;
+  margin: 0 auto;
+  width: 70%; /* ajusta el tamaño */
+  max-width: 800px;
+  border-radius: 35px; /* opcional */
+}
+
+.evento1-descripciones {
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.evento1-descripcion {
+  font-family: 'Quicksand', sans-serif;  
+  font-size: 2rem;
+  font-weight: normal;
+  color: #005E62;
+  margin-bottom: 100px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 100px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Contenedor principal */
+.evento11 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: 'Quicksand', sans-serif;
+  padding: 60px 100px;
+  /*background-color: #e7f6f7;*/
+}
+
+/* Sección izquierda */
+.evento11-lista {
+  width: 55%;
+}
+
+.evento11-lista h2 {
+  font-size: 2.5rem;
+  color: #46B4B9;
+  margin-bottom: 30px;
+}
+
+.evento11-lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+.evento11-lista li {
+  font-size: 17px;
+  color: #005E62;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  line-height: 2;
+}
+
+.evento11-lista li span {
+  background-color: #7D5BA6;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* Sección derecha (tarjeta) */
+.evento11-card {
+  width: 30%;
+  background: #f5fdfd;
+  border: 1.5px solid #9dd6d7;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card-info-evento11 p {
+  font-size: 1.2rem;
+  color: #005E62;
+  margin: 15px 0;
+}
+
+.btn-reservar {
+  background-color: #46B4B9;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.btn-reservar:hover {
+  background-color: #3da0a5;
+}
+
+.btn-compartir {
+  margin-top: 15px;
+  background: white;
+  color: #46B4B9;
+  border: 1.5px solid #46B4B9;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-compartir:hover {
+  background-color: #e9f9f9;
+}
+
+@media (max-width: 768px) {
+
+  /* TÍTULO */
+  .evento1-title {
+    font-size: 3rem;
+    width: 95%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  /* IMAGEN PRINCIPAL */
+  .img-evento1 {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* DESCRIPCIÓN */
+  .evento1-descripcion {
+    font-size: 1.5rem;
+    width: 95%;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  /* CONTENEDOR PRINCIPAL PASA A COLUMNA */
+  .evento11 {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+  }
+
+  /* LISTA IZQUIERDA */
+  .evento11-lista {
+    width: 100%;
+  }
+
+  .evento11-lista h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .evento11-lista li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  /* TARJETA DERECHA */
+  .evento11-card {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 25px;
+  }
+
+  .card-info-evento11 p {
+    font-size: 1.1rem;
+  }
+
+  /* BOTONES: siguen centrados */
+  .btn-reservar, 
+  .btn-compartir {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 14px 0;
+  }
+
+  .btn-reservar {
+    margin-bottom: 15px;
+  }
+}
