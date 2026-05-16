@@ -6,20 +6,29 @@
 }
 
 .home-wrapper {
-  text-align: center;
-  position: relative;
+ text-align: center;
+ position: relative;
+ padding: 50px 20px 20px;
 }
 
 .home-title {
-  font-size: 5rem;
-  font-weight: bold;
-  color: #46B4B9;
-  margin-bottom: 100px;
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 20px;
-  line-height: 1;
-  letter-spacing: 2px;
+ font-size: 5rem;
+ font-weight: bold;
+ color: #46b4b9;
+ width: 80%;
+ margin: 0 auto 15px;
+ padding: 0;
+ line-height: 1;
+ letter-spacing: 2px;
+}
+
+.home-subtitle {
+ color: #297777;
+ font-size: 1.4rem;
+ font-weight: 600;
+ width: 75%;
+ margin: 0 auto;
+ line-height: 1.4;
 }
 
 .home-descripciones {
