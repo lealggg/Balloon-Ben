@@ -38,7 +38,7 @@ export default function Carousel() {
             {index === 0 && (
               <button
                 className="slide-button yellow"
-                onClick={() => (window.location.href = "/videos")}
+                onClick={() => (window.location.href = "/aventuras")}
               >
                 Conoce más
               </button>
