@@ -90,10 +90,16 @@ const eventos = [
     </div>
         <Carousel />
          <div className="home-descripciones">
-    <h3 className="home-descripcion">En este mundo mágico los niños descubren y aprenden a través de canciones, risas y aventuras animadas. Balloon, siempre flotando alto, y Ben, su amigo curioso, exploran juntos cada episodio para enseñar los colores del arcoíris, los sonidos de los animales, los números mágicos y valores como la amistad y la cooperación.</h3>
+    <h3 className="home-descripcion">Un espacio seguro, creativo y lleno de música donde niños y familias pueden aprender, imaginar y compartir juntos.
+En Balloon and Ben creemos que el entretenimiento infantil también puede ser amable, positivo y significativo. Por eso
+creamos canciones, historias y aventuras que inspiran valores como el cuidado del planeta, la empatía, la amistad y el
+trabajo en equipo.
+Aquí las familias encuentran un lugar para cantar, bailar, aprender y disfrutar con tranquilidad, en un entorno pensado
+especialmente para los niños.
+Un mundo donde aprender se convierte en una aventura feliz para compartir en familia.</h3>
     </div>
     <div className="home-eventos">
-    <h1 className="home-evento">Eventos</h1>
+    <h1 className="home-evento">Aventuras</h1>
     </div>
     <div className="home-subEventos">
     <h3 className="home-subEvento">Momentos únicos para compartir, aprender y disfrutar juntos.</h3>
