@@ -67,8 +67,8 @@ const eventos = [
     },
   ];
   // Función que lleva a la página de eventos
-  const irAPaginaEventos = () => {
-    navigate("/eventos");
+  const irAPaginaAventuras = () => {
+    navigate("/aventuras");
   };
   const irAPaginaActividades = () => {
     navigate("/actividades");
@@ -111,12 +111,12 @@ Un mundo donde aprender se convierte en una aventura feliz para compartir en fam
             key={index}
             img={evento.img}
             desc={evento.desc}
-            onClick={() => navigate("/eventos")}
+            onClick={() => navigate("/aventuras")}
           />
         ))}
       </div>
      <div className="btn-container">
-  <button className="btn-outline" onClick={irAPaginaEventos}>Mira nuestra agenda completa</button>
+  <button className="btn-outline" onClick={irAPaginaAventuras}>Ver todas las Aventuras</button>
 </div>
 
 <div className="home-actividades">
@@ -137,7 +137,7 @@ Un mundo donde aprender se convierte en una aventura feliz para compartir en fam
         ))}
       </div>
         <div className="btn-container">
-  <button className="btn-outline" onClick={irAPaginaActividades}>Mira nuestra agenda completa</button>
+  <button className="btn-outline" onClick={irAPaginaActividades}>Mira nuestras Actividades</button>
 </div>
 
 <div className="home-videos">
@@ -169,7 +169,7 @@ Un mundo donde aprender se convierte en una aventura feliz para compartir en fam
     </div>
      <PersonajesCarousel />
       <div className="btn-container">
-  <button className="btn-outline" onClick={irAPaginaPersonajes}>Mira nuestra agenda completa</button>
+  <button className="btn-outline" onClick={irAPaginaPersonajes}>Conoce nuestros Personajes</button>
 </div>
       
     </div>
