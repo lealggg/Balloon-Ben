@@ -1,5 +1,4 @@
 .home {
-  /*background: linear-gradient(to bottom, #e2f6f5, #b8ece8);*/
   font-family: 'Janda Manatee', sans-serif;
   color: #333;
   overflow-x: hidden;
@@ -86,9 +85,9 @@
 
 .btn-container {
   display: flex;
-  justify-content: center;  /* centra horizontalmente */
-  align-items: center;      /* centra verticalmente si hay altura */
-  width: 100%;              /* ocupa todo el ancho disponible */
+  justify-content: center;  
+  align-items: center;      
+  width: 100%;              
   padding: 20px;
 }
 
@@ -215,77 +214,78 @@
 }
 
 @media (max-width: 768px) {
+  .home-wrapper {
+    padding: 30px 16px 10px;
+  }
 
-  /* ---------- TÍTULO PRINCIPAL ---------- */
   .home-title {
-    font-size: 3rem;      /* tú pediste 3rem */
-    width: 90%;
-    padding: 30px 10px;
-  }
-
-  /* ---------- DESCRIPCIÓN ---------- */
-  .home-descripcion {
-    font-size: 1.4rem;
-    width: 90%;
-    padding: 20px 10px;
-  }
-
-  /* ---------- SUBTÍTULOS (Eventos, Actividades, Videos, Personajes) ---------- */
-  .home-evento,
-  .home-actividad,
-  .home-video,
-  .home-personaje {
-    font-size: 1.8rem;
-    padding: 30px 0;
-    margin-bottom: 40px;
-  }
-
-  .home-subEvento,
-  .home-subActividad,
-  .home-subVideo,
-  .home-subPersonaje {
-    font-size: 1.3rem;
-    width: 90%;
-    padding: 0;
-    margin-bottom: 50px;
-  }
-
-  /* ---------- REJILLAS (2 columnas en móvil) ---------- */
-  .event-row,
-  .activ-row,
-  .vide-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* tú pediste 2 columnas */
-    gap: 15px;
-    padding: 0 15px;
-  }
-
-  /* ---------- TARJETAS ---------- */
-  .event-row img,
-  .activ-row img,
-  .vide-row img {
+    font-size: 2.4rem;
     width: 100%;
-    height: auto;
+    letter-spacing: 1px;
+    line-height: 1.1;
   }
 
-  /* ---------- PADDING GENERAL REDUCIDO ---------- */
+  .home-subtitle {
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .home-descripciones,
+  .home-eventos,
+  .home-subEventos,
+  .home-actividades,
+  .home-videos,
+  .home-personajes,
+  .home-subActividades,
+  .home-subVideos,
+  .home-subPersonajes {
+    text-align: left;
+  }
+
+  .home-descripcion,
+  .home-evento,
+  .home-subEvento,
+  .home-actividad,
+  .home-subActividad,
+  .home-video,
+  .home-subVideo,
+  .home-personaje,
+  .home-subPersonaje {
+    width: 100%;
+    margin: 0 0 24px;
+    padding: 0;
+    height: auto;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+
   .home-descripcion,
   .home-subEvento,
   .home-subActividad,
   .home-subVideo,
   .home-subPersonaje {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    font-size: 1.05rem;
   }
 
-  /* ---------- BOTONES (mantener tamaño original) ---------- */
+  .home-evento,
+  .home-actividad,
+  .home-video,
+  .home-personaje {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
   .btn-container {
-    padding: 10px 0;
+    padding: 16px 0;
   }
 
   .btn-outline {
-    width: auto;
-    font-size: 18px;  /* se mantiene igual */
-    padding: 12px 36px; /* igual */
+    width: 90%;
+    max-width: 280px;
+    padding: 12px 24px;
+    font-size: 16px;
   }
 }

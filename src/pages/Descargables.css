@@ -118,49 +118,67 @@
 }
 
 @media (max-width: 768px) {
-
-  /* TÍTULO */
-  .actividades-title {
-    font-size: 3rem;
-    width: 95%;
-    padding: 20px 10px;
-    text-align: center;
+  .actividades-wrapper {
+    padding: 2rem 1rem;
   }
 
-  /* IMAGEN TITE */
+  .actividades-title {
+    width: 100%;
+    font-size: 2.4rem;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin: 0 auto 1rem;
+  }
+
+  .actividades-descripciones {
+    text-align: left;
+  }
+
+  .actividades-descripcion {
+    width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0 0 24px;
+    text-align: left;
+  }
+
+  .home-instrumentos {
+    text-align: left;
+  }
+
+  .home-instrumento,
+  .home-colorea,
+  .home-misiones {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    height: auto;
+    margin: 0 0 12px;
+    padding: 20px 0 0;
+    letter-spacing: 1px;
+  }
+
+  .home-colorean,
+  .home-mision {
+    text-align: left;
+  }
+
   .tite-container {
-    position: absolute;
-    right: -2%;
-    top: -1%;
-    transform: rotate(-15deg);
+    right: -15%;
+    top: 0;
+    transform: rotate(-20deg) scale(0.75);
+    opacity: 0.9;
   }
 
   .tite {
     width: 180px;
+    max-width: 60vw;
   }
 
-  /* DESCRIPCIÓN */
-  .actividades-descripcion {
-    font-size: 1.5rem;
-    width: 95%;
-    padding: 20px 20px;
-  }
-
-  /* SUBTÍTULOS (Instrumentos, Colorea, Misiones) */
-  .home-instrumento,
-  .home-colorea,
-  .home-misiones {
-    font-size: 2rem;
-    width: 90%;
-    margin-left: 5%;
-    padding: 20px 0;
-  }
-
-  /* CONTENEDOR DE CARDS */
-  .activ-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+  .tite:hover {
+    transform: none;
+    opacity: 1;
   }
 }
