@@ -1,0 +1,13 @@
+.aventuras{
+    font-family: 'Janda Manatee', sans-serif;
+}
+
+.Aventuras-title{
+    font-size: 4rem;
+ font-weight: bold;
+ color: #46b4b9;
+ width: 80%;
+ margin: 0 auto 15px;
+ line-height: 1;
+ letter-spacing: 2px;
+}

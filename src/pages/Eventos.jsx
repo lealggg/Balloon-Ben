@@ -54,7 +54,7 @@ alegría.</h3>
 Aprovechamos el reconocimiento de marca de la serie para crear un evento de alta demanda familiar.</h3>
         </div>
     
-    <section className="diferenciadores">
+    
       <div className="diferenciadores__content">
         <h2 className="diferenciadores__title">Diferenciadores:</h2>
 
@@ -77,7 +77,7 @@ Aprovechamos el reconocimiento de marca de la serie para crear un evento de alta
           Espera muy pronto las fechas y lugares dónde nos estaremos presentando.
         </p>
       </div>
-    </section>
+    
 
     <div className="evento-eventos">
         <h1 className="evento-evento">Eventos</h1>

@@ -1,3 +1,9 @@
+import "./Tienda.css";
+
 export default function Tienda() {
- return <h1>Tienda</h1>;
+ return (
+    <div className="tienda">
+        <h1 className="Tienda-title">Tienda</h1>
+    </div>
+ )
 }

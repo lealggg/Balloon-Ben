@@ -35,7 +35,7 @@
 }
 
 .eventos-descripciones {
-  text-align: center;
+  text-align: left;
   position: relative;
   z-index: 2;
 }
@@ -59,13 +59,13 @@
 }
 
 .show-evento {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #46B4B9;
   margin-bottom: 100px;
   width: 80%;
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: 80px 0px;
   height: 10px;
   letter-spacing: 2px;
 }
@@ -84,36 +84,29 @@
   width: 80%;
   margin: 0 auto;
   padding: 0px 0px;
-  height: 40px;
-}
-
-.diferenciadores {
-  padding: 24px 20px;
-  color: #46B4B9;
 }
 
 .diferenciadores__content {
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
+  font-family: 'Quicksand',  sans-serif;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 20px;
   color: #46B4B9;
+  margin-bottom: 80px;
+  padding: 0px 0px;
+  width: 80%;
+  transform: translateY(70px);
 }
 
 .diferenciadores__title {
-  margin: 0 0 14px;
-  font-size: 26px;
-  font-weight: 700;
+  margin: 0 auto;
+  font-family: 'Janda Manatee', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
   color: #46B4B9;
-}
-
-.diferenciadores__content p,
-.diferenciadores__content strong {
-  color: #46B4B9;
-}
-
-.diferenciadores__final {
-  margin-top: 18px;
+  letter-spacing: 2px;
+  padding: 20px 0px;
 }
 
 .evento-eventos {

@@ -1,3 +1,9 @@
+import "./Aventuras.css";
+
 export default function Aventuras() {
- return <h1>Aventuras</h1>;
+ return (
+    <div className="aventuras">
+        <h1 className="Aventuras-title">Aventuras</h1>
+    </div>
+ )
 }
