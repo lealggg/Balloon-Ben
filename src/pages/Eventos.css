@@ -88,9 +88,9 @@
 }
 
 .diferenciadores {
-  background: #ffffff;
+  background: #eaf7fb;
   padding: 24px 20px;
-  color: #0d2f66;
+  color: #1f8f8f;
 }
 
 .diferenciadores__content {
@@ -99,21 +99,19 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.7;
+  color: #1f8f8f;
 }
 
 .diferenciadores__title {
   margin: 0 0 14px;
   font-size: 26px;
   font-weight: 700;
-  color: #0d2f66;
+  color: #1f8f8f;
 }
 
-.diferenciadores__content p {
-  margin: 0 0 12px;
-}
-
+.diferenciadores__content p,
 .diferenciadores__content strong {
-  font-weight: 700;
+  color: #1f8f8f;
 }
 
 .diferenciadores__final {
