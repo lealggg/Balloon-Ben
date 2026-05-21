@@ -252,8 +252,8 @@
   .home-subVideo,
   .home-personaje,
   .home-subPersonaje {
-    width: 100%;
-    margin: 0 0 24px;
+    width: 90%;
+    margin: 20px 20px 24px 20px;
     padding: 0;
     height: auto;
     line-height: 1.4;

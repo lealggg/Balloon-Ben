@@ -49,15 +49,17 @@
   .activ-row {
     gap: 15px;
     padding: 18px;
+    justify-content: left;
   }
 
   .activ-card img {
-    width: 200px;
+    width: 150px;
   }
 
   .activ-btn {
     bottom: 70px;
     padding: 6px 14px;
     font-size: 14px;
+    transform: translateY(-10px);
   }
 }

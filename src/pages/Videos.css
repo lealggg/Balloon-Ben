@@ -69,6 +69,10 @@
 /* 📱 Mobile grande */
 @media (max-width: 768px) {
 
+   .videos-wrapper {
+  padding: 0rem 0rem;
+}
+
   .videos-title {
     font-size: 3rem;
     width: 80%;

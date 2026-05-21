@@ -48,6 +48,7 @@
   .vide-row {
     gap: 15px;
     padding: 18px;
+    justify-content: left;
   }
 
   .vide-card img {
@@ -57,7 +58,7 @@
   .vide-btn {
     padding: 5px 14px;
     font-size: 13px;
-    bottom: 20px;
+    bottom: 30px;
     right: 5px;
     height: 36px;
   }

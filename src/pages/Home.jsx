@@ -84,8 +84,7 @@ const eventos = [
         <div className="home-wrapper">
     <h1 className="home-title">¡Bienvenido al mundo de Balloon & Ben!</h1>
      <p className="home-subtitle">
- Un espacio seguro, creativo y lleno de música donde niños y familias
- pueden aprender, imaginar y compartir juntos.
+ 
  </p>
     </div>
         <Carousel />
@@ -141,7 +140,7 @@ Un mundo donde aprender se convierte en una aventura feliz para compartir en fam
 </div>
 
 <div className="home-videos">
-    <h1 className="home-video">Videos</h1>
+    <h1 className="home-video">Musica</h1>
     </div>
     <div className="home-subVideos">
     <h3 className="home-subVideo">Aprende y explora nuevos temas con historias llenas de diversión y conocimiento.</h3>

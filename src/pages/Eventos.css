@@ -145,6 +145,9 @@
 
 @media (max-width: 768px) {
 
+  .eventos-wrapper{
+    padding: 0;
+  }
   /* Título principal */
   .eventos-title {
     font-size: 3rem;
@@ -154,16 +157,31 @@
 
   /* Imagen principal */
   .img-eventos {
-    width: 100%;       /* Se mantiene centrada automáticamente */
+    width: 90%;       /* Se mantiene centrada automáticamente */
     max-width: none;
   }
 
   /* Descripción */
   .eventos-descripcion {
     font-size: 1.5rem;
-    width: 95%;
-    padding: 20px 20px;
+    width: 85%;
+    padding: 20px 10px 20px 10px;
     text-align: center; /* Mantener centrado */
+  }
+
+  /* Títulos secundarios */
+  .show-evento {
+    font-size: 1.6rem;
+    width: 90%;
+    padding: 20px 0px;
+    margin: 20px 20px;
+  }
+
+  .show-subEvento {
+    font-size: 1.4rem;
+    width: 90%;
+    margin: 20px 20px;
+    transform: translateY(40px);
   }
 
   /* Títulos secundarios */

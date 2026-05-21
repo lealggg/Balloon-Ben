@@ -119,6 +119,8 @@
 @media (max-width: 768px) {
   .slide {
     height: 320px;
+    width: 95%;
+    transform: translateX(10px);
   }
 
   .arrow {
@@ -131,6 +133,7 @@
     padding: 10px 32px;
     font-size: 15px;
     bottom: 55px;
+    right: 8px;
   }
 
   .dot {
